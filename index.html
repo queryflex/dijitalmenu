@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pideci Dijital Menü</title>
+  <title>Gemsaz Pide Dijital Menü</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -72,6 +72,22 @@
       border-radius:12px;
       margin-bottom:10px;
     }
+
+    .side-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .side-layout .info { flex: 1; }
+    .side-img {
+      width: 80px !important;
+      height: 80px !important;
+      margin-bottom: 0 !important;
+      flex-shrink: 0;
+    }
+
     .card h3{font-size:17px;font-weight:600}
     .card p{font-size:13px;color:#9fb3c8;margin:6px 0}
 
@@ -98,105 +114,131 @@
       border-top:1px solid rgba(0,229,255,.15);
     }
 
-    /* Mobil iyileştirme */
     @media(max-width:480px){
       header h1{font-size:22px}
       .card img{height:140px}
+      .side-img { width: 60px !important; height: 60px !important; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🔥 Usta Pide Salonu 🔥</h1>
+  <h1>Gemsaz Pide Salonu</h1>
   <p>Odun Ateşinde Lezzet • Dijital Menü</p>
-</header>
+</header>   
 
 <div class="container">
 
-  <!-- PİDELER -->
   <section class="category">
-    <h2>🥖 Pideler</h2>
+    <h2>Pideler</h2>
     <div class="menu-grid">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1604908177225-3c3c6b8f3c1a" />
+        <img src="https://mobilsef.com/dimg/tarif/28010pide.jpg" />
         <h3>Kıymalı Pide</h3>
-        <p>Özel harman kıyma, ince hamur, taş fırın.</p>
-        <p>⚖️ 250g | 🌶️ Orta | 🧾 Gluten içerir | 🧀 Kaşar yok</p>
+        <p>Özel harman kıyma, ince hamur.</p>
+        <p>⚖️ 250g | 🌶️ Acılı & Acısız</p>
         <div class="price"><span>180 ₺</span></div>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1625944230945-1b7c1c6e2b06" />
+        <img src="https://d17wu0fn6x6rgz.cloudfront.net/img/w/tarif/mgt/kusgkasg_10.webp" />
         <h3>Kuşbaşılı Pide</h3>
         <p>Dana kuşbaşı, domates, biber.</p>
-        <p>⚖️ 300g | 🌶️ Acısız | 🧾 Gluten içerir</p>
+        <p>⚖️ 250g | 🌶️ Acılı & Acısız</p>
         <div class="price"><span>220 ₺</span></div>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1601924638867-3ec4c1f3a4b4" />
+        <img src="https://i.lezzet.com.tr/images-xxlarge/kavurmali-kasarli-pide-tarifi-60a5e5eb-60c0-407f-81f2-030d7f48f939" />
         <h3>Kaşarlı Pide</h3>
         <p>Bol kaşar peyniri, çıtır hamur.</p>
-        <p>⚖️ 230g | 🌶️ Acısız | 🧾 Süt ürünü içerir</p>
+        <p>⚖️ 250g | 🌶️ Acılı & Acısız</p>
         <div class="price"><span>170 ₺</span></div>
       </div>
     </div>
   </section>
 
-  <!-- LAHMACUN -->
   <section class="category">
-    <h2>🌯 Lahmacun</h2>
+    <h2>Lahmacunlar</h2>
     <div class="menu-grid">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8f6f" />
+        <img src="https://cf.kizlarsoruyor.com/q13013645/118ce41f-e47e-46cf-b213-fd361de4dbf7.jpg" />
         <h3>Acılı Lahmacun</h3>
         <p>Bol baharatlı, incecik hamur.</p>
-        <p>⚖️ 120g | 🌶️ Acılı | 🧾 Gluten içerir</p>
+        <p>⚖️ 250g | 🌶️ Acılı & Acısız</p>
         <div class="price"><span>70 ₺</span></div>
       </div>
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1617191518000-7c4d9c5e3d77" />
+        <img src="https://isbh.tmgrup.com.tr/sbh/2016/02/18/650x344/1455784363610.jpg" />
         <h3>Fındık Lahmacun</h3>
         <p>Mini boy, çıtır ve doyurucu.</p>
-        <p>⚖️ 80g | 🌶️ Orta | 🧾 Gluten içerir</p>
+        <p>⚖️ 250g | 🌶️ Acılı & Acısız</p>
         <div class="price"><span>45 ₺</span></div>
       </div>
     </div>
   </section>
 
-  <!-- İÇECEKLER -->
   <section class="category">
-    <h2>🥤 İçecekler</h2>
+    <h2>İçecekler</h2>
     <div class="menu-grid">
       <div class="card">
-        <h3>Ayran</h3>
-        <p>Günlük yoğurttan.</p>
+        <div class="side-layout">
+          <div class="info">
+            <h3>Ayran</h3>
+            <p>Günlük yoğurttan.</p>
+            <p>🧊 Buz Gibi | 🥤 Pet & Cam Şişe</p>
+          </div>
+          <img src="https://www.muratkellepaca.com/wp-content/uploads/2019/02/sutas-ayran-300-ml-16288-500x500.png" class="side-img" />
+        </div>
         <div class="price"><span>25 ₺</span></div>
       </div>
       <div class="card">
-        <h3>Kola</h3>
-        <p>330 ml</p>
+        <div class="side-layout">
+          <div class="info">
+            <h3>Kola</h3>
+            <p>Yemeğin üstüne iyi gider.</p>
+            <p>🧊 Buz Gibi | 🥤 Pet & Cam Şişe</p>
+          </div>
+          <img src="https://www.muratkellepaca.com/wp-content/uploads/2019/02/red-coca-cola-box-png-transparent-0.png" class="side-img" />
+        </div>
         <div class="price"><span>40 ₺</span></div>
       </div>
       <div class="card">
-        <h3>Şalgam</h3>
-        <p>Acılı / Acısız</p>
+        <div class="side-layout">
+          <div class="info">
+            <h3>Şalgam</h3>
+            <p>Ekstra acı sevenlere.</p>
+            <p>🧊 Buz Gibi | 🥤 Pet & Cam Şişe</p>
+          </div>
+          <img src="https://lezizustundoner.com/wp-content/uploads/2025/03/15-2.png" class="side-img" />
+        </div>
         <div class="price"><span>30 ₺</span></div>
       </div>
     </div>
   </section>
 
-  <!-- TATLILAR -->
   <section class="category">
-    <h2>🍰 Tatlılar</h2>
+    <h2>Tatlılar</h2>
     <div class="menu-grid">
       <div class="card">
-        <h3>Künefe</h3>
-        <p>Sıcak servis, Antep fıstığı.</p>
+        <div class="side-layout">
+          <div class="info">
+            <h3>Künefe</h3>
+            <p>Sıcak servis, Antep fıstığı.</p>
+            <p>🍯 Şerbetli ve Sıcak</p>
+          </div>
+          <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2015/05/kunefe-tarifi.jpg" class="side-img" />
+        </div>
         <div class="price"><span>140 ₺</span></div>
       </div>
       <div class="card">
-        <h3>Fırın Sütlaç</h3>
-        <p>Günlük üretim.</p>
+        <div class="side-layout">
+          <div class="info">
+            <h3>Fırın Sütlaç</h3>
+            <p>Günlük üretim, sıcak servis.</p>
+            <p>🔥 Tam Kıvamında</p>
+            </div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAbdoQuoZaBzkmYEzGWExUoO43q_G2WN3Ifg&s" class="side-img" />
+        </div>
         <div class="price"><span>90 ₺</span></div>
       </div>
     </div>
@@ -205,7 +247,7 @@
 </div>
 
 <footer>
-  © 2025 Usta Pide Salonu • Dijital Menü
+    Gemsaz Pide Salonu • Dijital Menü
 </footer>
 
 </body>
