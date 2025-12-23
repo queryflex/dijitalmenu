@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pideci Dijital Menü</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#00e5ff;
+      --secondary:#0b0f14;
+      --dark:#eaeaea;
+      --light:#121826;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#05070a,#0b0f14);
+      color:var(--dark);
+    }
+    header{
+      background:linear-gradient(135deg,#05070a,#0f172a);
+      color:#e5faff;
+      padding:24px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,229,255,.15);
+    }
+    header h1{font-size:26px;font-weight:600}
+    header p{font-size:14px;opacity:.9}
+
+    .container{max-width:1100px;margin:auto;padding:15px}
+
+    .category{
+      margin:30px 0;
+    }
+    .category h2{
+      font-size:22px;
+      margin-bottom:15px;
+      border-left:6px solid var(--primary);
+      padding-left:12px;
+      color:#e0f7ff;
+      text-shadow:0 0 8px rgba(0,229,255,.5);
+    }
+
+    .menu-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+    }
+
+    .card{
+      background:linear-gradient(180deg,#0f172a,#020617);
+      border-radius:18px;
+      box-shadow:0 8px 25px rgba(0,229,255,.12);
+      padding:16px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      transition:.35s;
+      border:1px solid rgba(0,229,255,.15);
+    }
+    .card:hover{
+      transform:translateY(-6px) scale(1.01);
+      box-shadow:0 14px 40px rgba(0,229,255,.35);
+    }
+    .card:hover{transform:translateY(-4px)}
+
+    .card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:10px;
+    }
+    .card h3{font-size:17px;font-weight:600}
+    .card p{font-size:13px;color:#9fb3c8;margin:6px 0}
+
+    .price{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-top:10px;
+    }
+    .price span{
+      font-size:20px;
+      font-weight:700;
+      color:var(--primary);
+      text-shadow:0 0 6px rgba(0,229,255,.8),0 0 14px rgba(0,229,255,.6);
+    }
+
+    footer{
+      background:#020617;
+      color:#7dd3fc;
+      text-align:center;
+      padding:22px;
+      margin-top:50px;
+      font-size:13px;
+      border-top:1px solid rgba(0,229,255,.15);
+    }
+
+    /* Mobil iyileştirme */
+    @media(max-width:480px){
+      header h1{font-size:22px}
+      .card img{height:140px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔥 Usta Pide Salonu 🔥</h1>
+  <p>Odun Ateşinde Lezzet • Dijital Menü</p>
+</header>
+
+<div class="container">
+
+  <!-- PİDELER -->
+  <section class="category">
+    <h2>🥖 Pideler</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908177225-3c3c6b8f3c1a" />
+        <h3>Kıymalı Pide</h3>
+        <p>Özel harman kıyma, ince hamur, taş fırın.</p>
+        <p>⚖️ 250g | 🌶️ Orta | 🧾 Gluten içerir | 🧀 Kaşar yok</p>
+        <div class="price"><span>180 ₺</span></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1625944230945-1b7c1c6e2b06" />
+        <h3>Kuşbaşılı Pide</h3>
+        <p>Dana kuşbaşı, domates, biber.</p>
+        <p>⚖️ 300g | 🌶️ Acısız | 🧾 Gluten içerir</p>
+        <div class="price"><span>220 ₺</span></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601924638867-3ec4c1f3a4b4" />
+        <h3>Kaşarlı Pide</h3>
+        <p>Bol kaşar peyniri, çıtır hamur.</p>
+        <p>⚖️ 230g | 🌶️ Acısız | 🧾 Süt ürünü içerir</p>
+        <div class="price"><span>170 ₺</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAHMACUN -->
+  <section class="category">
+    <h2>🌯 Lahmacun</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8f6f" />
+        <h3>Acılı Lahmacun</h3>
+        <p>Bol baharatlı, incecik hamur.</p>
+        <p>⚖️ 120g | 🌶️ Acılı | 🧾 Gluten içerir</p>
+        <div class="price"><span>70 ₺</span></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1617191518000-7c4d9c5e3d77" />
+        <h3>Fındık Lahmacun</h3>
+        <p>Mini boy, çıtır ve doyurucu.</p>
+        <p>⚖️ 80g | 🌶️ Orta | 🧾 Gluten içerir</p>
+        <div class="price"><span>45 ₺</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İÇECEKLER -->
+  <section class="category">
+    <h2>🥤 İçecekler</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <h3>Ayran</h3>
+        <p>Günlük yoğurttan.</p>
+        <div class="price"><span>25 ₺</span></div>
+      </div>
+      <div class="card">
+        <h3>Kola</h3>
+        <p>330 ml</p>
+        <div class="price"><span>40 ₺</span></div>
+      </div>
+      <div class="card">
+        <h3>Şalgam</h3>
+        <p>Acılı / Acısız</p>
+        <div class="price"><span>30 ₺</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TATLILAR -->
+  <section class="category">
+    <h2>🍰 Tatlılar</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <h3>Künefe</h3>
+        <p>Sıcak servis, Antep fıstığı.</p>
+        <div class="price"><span>140 ₺</span></div>
+      </div>
+      <div class="card">
+        <h3>Fırın Sütlaç</h3>
+        <p>Günlük üretim.</p>
+        <div class="price"><span>90 ₺</span></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  © 2025 Usta Pide Salonu • Dijital Menü
+</footer>
+
+</body>
+</html>
